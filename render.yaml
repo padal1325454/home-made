@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: home-made-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 5050
+
+  - type: web
+    name: home-made-admin
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    autoDeploy: true
+    envVars:
+      - key: VITE_API_URL
+        value: https://home-made-api.onrender.com

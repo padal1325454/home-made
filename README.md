@@ -27,6 +27,16 @@ Set `VITE_API_URL` to your API base URL (for example on Render):
 VITE_API_URL=https://your-api.onrender.com
 ```
 
+## Render deployment
+
+This repo includes a `render.yaml` that provisions:
+- `home-made-api` (Node/Express)
+- `home-made-admin` (Vite static build)
+
+Steps:
+1. Create a new Render Blueprint and point it to this repo.
+2. After services are created, update `VITE_API_URL` to the API service URL.
+
 ## Database (PostgreSQL)
 
 This UI currently stores data in `localStorage`. The SQL schema below is a
