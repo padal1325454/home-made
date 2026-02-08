@@ -1,0 +1,41 @@
+{
+  "name": "home-made",
+  "version": "1.0.0",
+  "description": "Simple starter project for a homemade app.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "node server/index.cjs",
+    "start": "node server/index.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padal1325454/home-made.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/padal1325454/home-made/issues"
+  },
+  "homepage": "https://github.com/padal1325454/home-made#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "json-server": "^1.0.0-beta.5",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.13",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
