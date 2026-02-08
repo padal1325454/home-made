@@ -2,7 +2,6 @@ services:
   - type: web
     name: home-made-api
     env: node
-    plan: free
     buildCommand: npm install
     startCommand: npm start
     autoDeploy: true
@@ -13,7 +12,6 @@ services:
   - type: web
     name: home-made-admin
     env: static
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     autoDeploy: true
